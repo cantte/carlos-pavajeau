@@ -17,7 +17,10 @@ const About = () => {
           <TextGradient variant="h2" textAlign="center" sx={{ mb: 3 }}>
             About me
           </TextGradient>
-          <Typography variant="body1" className="indent-4 text-justify">
+          <Typography
+            variant="body1"
+            className="mx-auto mt-4 text-lg font-medium text-gray-400 lg:max-w-3xl lg:text-xl lg:text-center"
+          >
             I&apos;m a junior software developer. I&apos;m 20 years old and I
             live in Pueblo Bello, Cesar, Colombia. I&apos;m currently studying
             at the UPC (Universidad Popular del Cesar), Colombia. I&apos;m

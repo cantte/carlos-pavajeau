@@ -25,10 +25,10 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
       </Head>
 
       <Section delay={0.1}>
-        <TextGradient variant="h2" textAlign="center" sx={{ mb: 7 }}>
-          Projects
-        </TextGradient>
+        <TextGradient variant="h1">Projects</TextGradient>
       </Section>
+
+      <div className="mt-7" />
 
       {projects.map((project, index) => (
         <ProjectCard

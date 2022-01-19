@@ -11,18 +11,21 @@ interface Props {
 const ProjectCard = (props: Props) => {
   const { title, description, githubUrl } = props
   return (
-    <div className="min-w-full">
+    <div className="min-w-full m-4">
       <Section delay={0.2}>
-        <div className="w-full border-white border-2 p-4 rounded-2xl m-4">
-          <Typography variant="h5" textAlign="left" sx={{ mb: 3 }}>
+        <div
+          className="w-full p-10 bg-white shadow-lg rounded-xl bg-opacity-5">
+          <Typography variant="h3"
+                      className="text-lg font-medium text-white">
             {title}
           </Typography>
-          <Typography variant="body1" textAlign="left" sx={{ mb: 3 }}>
+          <Typography variant="body1"
+                      className="mt-2 text-base font-medium text-gray-400">
             {description}
           </Typography>
           <div>
             <a href={githubUrl} target="_blank" rel="noreferrer">
-              <IconButton size="large" color="inherit">
+              <IconButton size="large" color="inherit" className="p-0 mt-3">
                 <GitHubIcon />
               </IconButton>
             </a>
