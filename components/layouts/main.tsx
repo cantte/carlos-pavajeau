@@ -4,8 +4,8 @@ import { ReactNode } from 'react'
 import { NextRouter } from 'next/router'
 
 interface Props {
-  children: ReactNode;
-  router: NextRouter;
+  children: ReactNode
+  router: NextRouter
 }
 
 const Main = ({ children }: Props) => {
@@ -13,9 +13,7 @@ const Main = ({ children }: Props) => {
     <Box sx={{ paddingBottom: 8 }}>
       <Navbar />
 
-      <Container maxWidth="md">
-        {children}
-      </Container>
+      <Container maxWidth="md">{children}</Container>
     </Box>
   )
 }

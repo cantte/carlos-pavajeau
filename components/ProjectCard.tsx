@@ -21,8 +21,7 @@ const ProjectCard = (props: Props) => {
             {description}
           </Typography>
           <div>
-            <a href={githubUrl} target="_blank"
-               rel="noreferrer">
+            <a href={githubUrl} target="_blank" rel="noreferrer">
               <IconButton size="large" color="inherit">
                 <GitHubIcon />
               </IconButton>

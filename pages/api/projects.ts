@@ -10,7 +10,8 @@ type Data = {
 const data: Data[] = [
   {
     title: 'Kaizen',
-    description: 'Web software for the management of administrative control of sanitation companies.',
+    description:
+      'Web software for the management of administrative control of sanitation companies.',
     githubUrl: 'https://github.com/cantte/Kaizen',
   },
   {
