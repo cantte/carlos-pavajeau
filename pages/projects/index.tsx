@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { NextPage, NextPageContext } from 'next'
 import TextGradient from 'components/TextGradient'
 import ProjectCard from 'components/ProjectCard'
 import axios from 'axios'
@@ -42,7 +42,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(context: NextPageContext) {
   const response = await axios.get<Project>(
     `${process.env.API_URL}/api/projects`,
   )
