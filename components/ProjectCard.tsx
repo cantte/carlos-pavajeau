@@ -13,11 +13,8 @@ const ProjectCard = (props: Props) => {
   return (
     <div className="min-w-full m-4">
       <Section delay={0.2}>
-        <div
-          className="w-full p-10 bg-white shadow-lg rounded-xl bg-opacity-5">
-          <h3 className="text-lg font-medium text-white">
-            {title}
-          </h3>
+        <div className="w-full p-10 bg-white shadow-lg rounded-xl bg-opacity-5">
+          <h3 className="text-lg font-medium text-white">{title}</h3>
           <span className="mt-2 text-base font-medium text-gray-400">
             {description}
           </span>
