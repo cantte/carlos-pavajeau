@@ -13,7 +13,7 @@ const Main = ({ children }: Props) => {
     <Box sx={{ paddingBottom: 8 }}>
       <Navbar />
 
-      <Container maxWidth="md">{children}</Container>
+      <Container maxWidth="lg">{children}</Container>
     </Box>
   )
 }
