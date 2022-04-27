@@ -1,7 +1,7 @@
-import { Box, Container } from '@mui/material'
-import Navbar from 'components/Navbar'
 import { ReactNode } from 'react'
 import { NextRouter } from 'next/router'
+import Navbar from 'components/navbar'
+import { Container } from '@nextui-org/react'
 
 interface Props {
   children: ReactNode
@@ -10,11 +10,11 @@ interface Props {
 
 const Main = ({ children }: Props) => {
   return (
-    <Box sx={{ paddingBottom: 8 }}>
+    <>
       <Navbar />
 
-      <Container maxWidth="lg">{children}</Container>
-    </Box>
+      <Container>{children}</Container>
+    </>
   )
 }
 
